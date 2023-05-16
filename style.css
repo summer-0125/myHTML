@@ -1,0 +1,142 @@
+/* body{
+  background: rgb(255,200,255);
+}
+
+
+img{
+  width: 200px;
+  height: 200px;
+}
+ */
+
+
+
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+.wrapper {
+  margin: 30px;
+  border: 1px solid #868686;
+  border-radius: 10px;
+  background-color: #282828;
+  text-align: center;
+}
+
+.mac-btn-list {
+  /* 1. 내가 정렬하고 싶은 아이템의 부모 요소에게
+     display : flex 속성을 준다.  
+     */
+  /* display, position 이 두가지 속성은 무조건
+     다른 속성들보다 위에 작성하는 게 좋다 -> width, height
+  */
+  display: flex;
+  background-color: #151515;
+  padding: 10px 0;
+  /* 1. 좌측 상단 
+  2. 우측 상단
+  3. 우측 하단
+  4. 좌측 하단
+  시계 방향으로 돌아간다
+  */
+  border-bottom: 1px solid #000;
+  border-radius: 10px 10px 0 0;
+}
+
+.mac-btn-item {
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #db4932;
+
+}
+
+.yellow {
+  background-color: #ffc34a;
+}
+
+.green {
+  background-color: #59c24b;
+}
+
+.gnb-list {
+  display: flex;
+  /* 기본값 : flex-start(좌측정렬)
+     가운데정렬 : justify-content: center;
+     우측 정렬 : justify-content: flex-end;
+  */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gnb-item {
+  margin-right: 30px;
+}
+
+/* gnb-item이라는 클래스를 가진 애들 중에서
+   마지막 요소
+*/
+.gnb-item:last-child {
+  margin-right: 0;
+}
+
+.my-name {
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* info-section이라는 클래스 안에 있는 img 태그에게만
+   지정된 스타일 적용
+*/
+.info-section img {
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 50%;
+  /* 1. cover
+    : 내용이 비율을 유지하면서 정의된 가로 X 세로
+    사이즈를 가득 채울 때 까지 확대된다. 
+    2. contain
+    : 내용이 비율을 유지하면서 정의된 가로 X 세로
+    안에서 최대한으로 확대된다.
+  */
+  object-fit: cover;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-list h3 {
+  margin-right: 40px;
+  color: #fff;
+}
+
+.contact-item {
+  padding-right: 20px;
+}
+
+.contact-item:last-child {
+  padding-right: 0;
+}
